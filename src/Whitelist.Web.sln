@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelist.Web", "Whitelist.Web\Whitelist.Web.csproj", "{78146C56-E1F4-4CE4-B50D-5F92218C3FFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelist.Web.Tests", "Whitelist.Web.Tests\Whitelist.Web.Tests.csproj", "{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78146C56-E1F4-4CE4-B50D-5F92218C3FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78146C56-E1F4-4CE4-B50D-5F92218C3FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78146C56-E1F4-4CE4-B50D-5F92218C3FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78146C56-E1F4-4CE4-B50D-5F92218C3FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
