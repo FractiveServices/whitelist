@@ -1,0 +1,6 @@
+{
+    "DatabaseEntry": 0, // int
+    "Username": "", // string
+    "UserId": 0, // double
+    "AllowedAccess": true // bool
+}

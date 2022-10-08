@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelist.Web", "Whitelist.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelist.Web.Tests", "Whitelist.Web.Tests\Whitelist.Web.Tests.csproj", "{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelist.Core", "Whitelist.Core\Whitelist.Core.csproj", "{BB0B7435-218B-478E-9902-A72C991D0554}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B3B83ED-96C2-465E-ADB9-2BD4A9E5E84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0B7435-218B-478E-9902-A72C991D0554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0B7435-218B-478E-9902-A72C991D0554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0B7435-218B-478E-9902-A72C991D0554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0B7435-218B-478E-9902-A72C991D0554}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
