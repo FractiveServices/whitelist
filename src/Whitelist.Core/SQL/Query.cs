@@ -13,6 +13,7 @@
 using System.Net;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
+using Whitelist.Core.Discord;
 
 namespace Whitelist.Core.SQL {
     public class Query {
@@ -52,6 +53,56 @@ namespace Whitelist.Core.SQL {
             }
 
             return jsonData;
+        }
+
+        public static string GetCustomerIdFromDiscordId(long discordId) {
+            string customerId = "";
+
+            using (MySqlConnection con = new MySqlConnection(Connection.GetConnectionString())) {
+                con.Open();
+
+                var cmd = new MySqlCommand($"SELECT * FROM whitelist.wl_customers WHERE DiscordId = {discordId};", con);
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read()) {
+                    if (rdr.HasRows) {
+                        if (rdr.GetDouble(2) == discordId) {
+                            customerId = rdr.GetString(4);
+                        }
+                        else {
+                            return "";
+                        }
+                    }
+                    else {
+                        return "";
+                    }
+                }
+
+                con.Close();
+            }
+
+            return customerId;
+        }
+
+        public static int GetLatestDbEntryId() {
+            int highest = 0;
+
+            using (MySqlConnection con = new MySqlConnection(Connection.GetConnectionString())) {
+                con.Open();
+
+                var cmd = new MySqlCommand($"SELECT * FROM whitelist.wl_users WHERE ID IN (SELECT Max(ID) FROM whitelist.wl_users);", con);
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read()) {
+                    highest = rdr.GetInt16(0);
+                }
+
+                con.Close();
+            }
+
+            return highest;
         }
     }
 }
