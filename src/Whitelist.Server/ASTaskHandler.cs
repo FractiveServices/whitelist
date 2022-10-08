@@ -1,4 +1,16 @@
-﻿using System;
+﻿// #######################################################
+// Copyright (c) VAVE 2022. All rights reserved.
+// VAVE CONFIDENTIAL AND PROPRIETARY
+// 
+// File: ASTaskHandler.cs
+// Description: Task handler for the server software for Whitelist backend
+// 
+// Author: B. Sugiyama (bsugiyama@vavestudios.com)
+// Date: 2022/10/08
+// #######################################################
+// 
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;

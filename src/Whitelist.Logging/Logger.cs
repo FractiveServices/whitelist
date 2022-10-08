@@ -1,10 +1,21 @@
-﻿using System;
+﻿// #######################################################
+// Copyright (c) VAVE 2022. All rights reserved.
+// VAVE CONFIDENTIAL AND PROPRIETARY
+// 
+// File: Logger.cs
+// Description: Logging system for Whitelist backend
+// 
+// Author: B. Sugiyama (bsugiyama@vavestudios.com)
+// Date: 2022/10/08
+// #######################################################
+// 
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Whitelist.Logging {
     public class Logger {

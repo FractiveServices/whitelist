@@ -1,4 +1,16 @@
-﻿using MySql.Data.MySqlClient;
+﻿// #######################################################
+// Copyright (c) VAVE 2022. All rights reserved.
+// VAVE CONFIDENTIAL AND PROPRIETARY
+// 
+// File: Alter.cs
+// Description: SQL updating manager
+// 
+// Author: B. Sugiyama (bsugiyama@vavestudios.com)
+// Date: 2022/10/08
+// #######################################################
+// 
+
+using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
