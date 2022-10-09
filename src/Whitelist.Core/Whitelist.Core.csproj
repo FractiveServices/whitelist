@@ -110,6 +110,12 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Whitelist.Logging\Whitelist.Logging.csproj">
+      <Project>{8cbf157e-379b-41a5-897f-dc24e05965df}</Project>
+      <Name>Whitelist.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

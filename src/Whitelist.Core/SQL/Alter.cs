@@ -31,14 +31,20 @@ namespace Whitelist.Core.SQL {
 
                 int dbEntryId = Query.GetLatestDbEntryId() + 1;
 
-                using (var wc = new WebClient()) {
-                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-                    string retn = wc.DownloadString("https://api.roblox.com/users/" + userId);
+                try {
+                    using (var wc = new WebClient()) {
+                        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+                        string retn = wc.DownloadString("https://api.roblox.com/users/" + userId);
 
-                    JSON.RobloxApi.Root deserialized = JsonConvert.DeserializeObject<JSON.RobloxApi.Root>(retn);
+                        JSON.RobloxApi.Root deserialized = JsonConvert.DeserializeObject<JSON.RobloxApi.Root>(retn);
 
-                    username = deserialized.Username;
-                    wc.Dispose();
+                        username = deserialized.Username;
+                        wc.Dispose();
+                    }
+                }
+                catch (Exception ex) {
+                    Console.WriteLine(ex.ToString());
+                    Logging.Logger.WriteToLog(ex.ToString());
                 }
 
                 var cmd = new MySqlCommand($"INSERT INTO `whitelist`.`wl_users` (`ID`, `Username`, `UserID`, `Customer`) VALUES ('{dbEntryId}', '{username}', '{userId}', '{customerId}');", con);

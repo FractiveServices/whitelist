@@ -10,6 +10,7 @@
 // #######################################################
 // 
 
+using System;
 using System.Net;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
@@ -38,15 +39,21 @@ namespace Whitelist.Core.SQL {
 
                 jsonData.UserId = userId;
 
-                using (var wc = new WebClient()) {
-                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-                    string retn = wc.DownloadString("https://api.roblox.com/users/" + userId);
+                try {
+                    using (var wc = new WebClient()) {
+                        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+                        string retn = wc.DownloadString("https://api.roblox.com/users/" + userId);
 
-                    JSON.RobloxApi.Root deserialized = JsonConvert.DeserializeObject<JSON.RobloxApi.Root>(retn);
+                        JSON.RobloxApi.Root deserialized = JsonConvert.DeserializeObject<JSON.RobloxApi.Root>(retn);
 
-                    jsonData.Username = deserialized.Username;
+                        jsonData.Username = deserialized.Username;
 
-                    wc.Dispose();
+                        wc.Dispose();
+                    }
+                }
+                catch(Exception ex) {
+                    Console.WriteLine(ex.ToString());
+                    Logging.Logger.WriteToLog(ex.ToString());
                 }
 
                 con.Close();
