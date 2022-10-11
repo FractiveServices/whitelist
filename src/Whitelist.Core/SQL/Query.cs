@@ -111,5 +111,49 @@ namespace Whitelist.Core.SQL {
 
             return highest;
         }
+
+        public static int GetLatestDbEntryIdStaff() {
+            int highest = 0;
+
+            using (MySqlConnection con = new MySqlConnection(Connection.GetConnectionString())) {
+                con.Open();
+
+                var cmd = new MySqlCommand($"SELECT * FROM whitelist.wl_staff WHERE ID IN (SELECT Max(ID) FROM whitelist.wl_staff);", con);
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read()) {
+                    highest = rdr.GetInt16(0);
+                }
+
+                con.Close();
+            }
+
+            return highest + 1;
+        }
+
+        public static Structures.AccountInfo GetAccountInfo(long discordId) {
+            var info = new Structures.AccountInfo();
+
+            using (MySqlConnection con = new MySqlConnection(Connection.GetConnectionString())) {
+                con.Open();
+
+                var cmd = new MySqlCommand($"SELECT * FROM whitelist.wl_customers WHERE DiscordID = {discordId};", con);
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read()) {
+                    info.Name = rdr.GetString(1);
+                    info.APIKey = rdr.GetString(4);
+                    info.CurrentWhitelistCount = rdr.GetInt16(8);
+                    info.MaxWhitelistCount = rdr.GetInt16(9);
+                    info.Tier = rdr.GetString(10);
+                }
+
+                con.Close();
+            }
+
+            return info;
+        }
     }
 }

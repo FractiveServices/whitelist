@@ -105,6 +105,7 @@
     <Compile Include="SQL\Alter.cs" />
     <Compile Include="SQL\Connection.cs" />
     <Compile Include="SQL\Query.cs" />
+    <Compile Include="Structures\AccountInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
