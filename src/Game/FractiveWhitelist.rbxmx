@@ -1,0 +1,595 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Model" referent="RBX84CBCE39A59547A896426CDF25BD87A5">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<token name="LevelOfDetail">0</token>
+			<CoordinateFrame name="ModelMeshCFrame">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+			<Vector3 name="ModelMeshSize">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+			</Vector3>
+			<token name="ModelStreamingMode">0</token>
+			<string name="Name">FractiveDRM/Whitelist</string>
+			<bool name="NeedsPivotMigration">false</bool>
+			<Ref name="PrimaryPart">null</Ref>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+			<OptionalCoordinateFrame name="WorldPivotData">
+				<CFrame>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CFrame>
+			</OptionalCoordinateFrame>
+		</Properties>
+		<Item class="Model" referent="RBXEEB3A68DA2AF429D8002E2A79F873052">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<token name="LevelOfDetail">0</token>
+				<CoordinateFrame name="ModelMeshCFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+				<Vector3 name="ModelMeshSize">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="ModelStreamingMode">0</token>
+				<string name="Name">OPTIONAL Example Implementations</string>
+				<bool name="NeedsPivotMigration">false</bool>
+				<Ref name="PrimaryPart">null</Ref>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
+			</Properties>
+			<Item class="Model" referent="RBX7AB6BCE65CB94059B872A2657D03180E">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<token name="LevelOfDetail">0</token>
+					<CoordinateFrame name="ModelMeshCFrame">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<Vector3 name="ModelMeshSize">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<token name="ModelStreamingMode">0</token>
+					<string name="Name">Example DRM implementation</string>
+					<bool name="NeedsPivotMigration">false</bool>
+					<Ref name="PrimaryPart">null</Ref>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+					<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
+				</Properties>
+				<Item class="Script" referent="RBX4C2B0243CDBE437D8E2E74CA67D17DE2">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">DRM</string>
+						<token name="RunContext">0</token>
+						<string name="ScriptGuid">{7746F18B-2F4F-41BF-9D07-1E99286FAAF5}</string>
+						<ProtectedString name="Source"><![CDATA[-- Example implementation for the Fractive whitelisting API for asset DRM
+
+local api = require(game:GetService("ServerStorage"):WaitForChild("Fractive").Whitelist.WhitelistApi);
+
+if api:isGameAuthorized() then
+	
+else
+	script.Parent:Destroy();
+end]]></ProtectedString>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Part" referent="RBX181AC8D612474E5BB06AAF689D36EE1F">
+					<Properties>
+						<bool name="Anchored">false</bool>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<CoordinateFrame name="CFrame">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">true</bool>
+						<bool name="CanQuery">true</bool>
+						<bool name="CanTouch">true</bool>
+						<bool name="CastShadow">true</bool>
+						<string name="CollisionGroup">Default</string>
+						<int name="CollisionGroupId">0</int>
+						<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+						<PhysicalProperties name="CustomPhysicalProperties">
+							<CustomPhysics>false</CustomPhysics>
+						</PhysicalProperties>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<bool name="Massless">false</bool>
+						<token name="Material">256</token>
+						<string name="MaterialVariantSerialized"></string>
+						<string name="Name">Part</string>
+						<CoordinateFrame name="PivotOffset">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<int name="RootPriority">0</int>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<token name="formFactorRaw">1</token>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>4</X>
+							<Y>1</Y>
+							<Z>2</Z>
+						</Vector3>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX0A45C71DE2F04EDA91404C5E71596A0E">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Access Control</string>
+					<token name="RunContext">0</token>
+					<string name="ScriptGuid">{C9B00AB5-A37D-42E8-B888-A9665C8CB7BC}</string>
+					<ProtectedString name="Source"><![CDATA[-- Example implementation for the Fractive whitelisting API for access control
+
+local api = require(game:GetService("ServerStorage"):WaitForChild("Fractive").Whitelist.WhitelistApi);
+
+game:GetService("Players").PlayerAdded:Connect(function(plr)
+	local auth = api.isUserAuthorized(api, plr.UserId);
+	
+	if auth == false then
+		plr:Kick("Not on whitelist.");
+		warn("FRCV: "..plr.UserId.." denied access");
+	else
+		warn("FRCV: "..plr.UserId.." is allowed");
+	end
+end)]]></ProtectedString>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Model" referent="RBXAF82394AFB4C425EB87BEE93BFCEA920">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<token name="LevelOfDetail">0</token>
+				<CoordinateFrame name="ModelMeshCFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+				<Vector3 name="ModelMeshSize">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="ModelStreamingMode">0</token>
+				<string name="Name">UNGROUP INSERVERSTORAGE</string>
+				<bool name="NeedsPivotMigration">false</bool>
+				<Ref name="PrimaryPart">null</Ref>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<OptionalCoordinateFrame name="WorldPivotData">
+					<CFrame>
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CFrame>
+				</OptionalCoordinateFrame>
+			</Properties>
+			<Item class="Folder" referent="RBX0C5963CA94A4484DBB58CF9A54BE3FAE">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<string name="Name">Fractive</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="Folder" referent="RBX3FE0C68C31FA47A08C7E95B02458A644">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<string name="Name">Whitelist</string>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="ModuleScript" referent="RBX26676B92EA0B49F7A55103452950958E">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">WhitelistApi</string>
+							<string name="ScriptGuid">{547CC8E3-A31E-43A7-8756-852D9AA14585}</string>
+							<ProtectedString name="Source"><![CDATA[-- #######################################################
+-- Copyright (c) VAVE 2022. All rights reserved.
+-- VAVE LICENSED SOURCE CODE
+-- 
+-- File: FractiveLib.lua
+-- Description: Main library for the Fractive whitelisting API
+-- 
+-- Author: B. Sugiyama
+-- Date: 2022/10/08
+-- #######################################################
+-- 
+
+----------- SERVICE DEFINITIONS ----------- 
+local httpSvc = game:GetService("HttpService");
+
+-----------       IMPORTS       -----------
+local Base64 = require(script.Parent.Base64);
+
+-----------  CLASS DEFINITION   ----------- 
+local api = {};
+
+local Configuration = script.Parent.Configuration;
+
+-----------      FUNCTIONS    ----------- 
+function api:isUserAuthorized(userId)		
+	local data = {
+		ID = userId,
+		Customer = Configuration.CustomerKey.Value
+	};
+		
+	local encoded = httpSvc:JSONEncode(data);
+	
+	local encodedBase64 = Base64.encode(encoded);
+	
+	local uri = Configuration.Server.Value.."/whitelist/"..encodedBase64;
+	
+	local response;
+	local respData;
+
+	pcall(function()
+		response = httpSvc:GetAsync(uri);
+		respData = httpSvc:JSONDecode(response);        
+	end)
+
+	if respData ~= nil then
+		return respData.AllowedAccess;
+	else
+		return false;
+	end
+end
+
+function api:isGameAuthorized()
+	local ownerId;
+
+	local creatorId = game.CreatorId;
+
+	if game.CreatorType == Enum.CreatorType.Group then
+		ownerId = game:GetService("GroupService"):GetGroupInfoAsync(creatorId).Owner.Id;
+	else
+		ownerId = creatorId;
+	end
+
+	return api.isUserAuthorized(api, game.CreatorId);
+end
+
+return api;
+
+-- EOF]]></ProtectedString>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="Configuration" referent="RBXF98FCCA8902141DABBCDAF63C570ADF4">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<string name="Name">Configuration</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+						<Item class="StringValue" referent="RBXD5BB396010D441E8B20840137C8B95F5">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<string name="Name">CustomerKey</string>
+								<int64 name="SourceAssetId">-1</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<string name="Value">%CUSTOMERKEY_FILLTAG%</string>
+							</Properties>
+						</Item>
+						<Item class="StringValue" referent="RBXC1C3AF0B73EA4FA1A5AE2219380529F7">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<string name="Name">Server</string>
+								<int64 name="SourceAssetId">-1</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<string name="Value">http://102.165.56.191</string>
+							</Properties>
+						</Item>
+						<Item class="StringValue" referent="RBX273BFC43C9334D7F85FA75C7652E2642">
+							<Properties>
+								<BinaryString name="AttributesSerialize"></BinaryString>
+								<string name="Name">HubUri</string>
+								<int64 name="SourceAssetId">-1</int64>
+								<BinaryString name="Tags"></BinaryString>
+								<string name="Value">https://hub.fractive.dev</string>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ModuleScript" referent="RBX1662B2D8999047C1B372521ADFDA359E">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">Base64</string>
+							<string name="ScriptGuid">{022F162F-5245-444F-AFDE-F785D4FDBF75}</string>
+							<ProtectedString name="Source"><![CDATA[local FILLER_CHARACTER = 61
+
+local alphabet = {}
+local indexes = {}
+
+for index = 65, 90 do table.insert(alphabet, index) end -- A-Z
+for index = 97, 122 do table.insert(alphabet, index) end -- a-z
+for index = 48, 57 do table.insert(alphabet, index) end -- 0-9
+
+table.insert(alphabet, 43) -- +
+table.insert(alphabet, 47) -- /
+
+for index, character in pairs(alphabet) do
+	indexes[character] = index
+end
+
+local function buildString(values)
+	local output = {}
+
+	for index = 1, #values, 4096 do
+		table.insert(output, string.char(
+			unpack(values, index, math.min(index + 4096 - 1, #values))
+			))
+	end
+
+	return table.concat(output, "")
+end
+
+local Base64 = {}
+
+function Base64.encode(input)
+	local output = {}
+
+	for index = 1, #input, 3 do
+		local C1, C2, C3 = string.byte(input, index, index + 2)
+
+		local A = bit32.rshift(C1, 2)
+		local B = bit32.lshift(bit32.band(C1, 3), 4) + bit32.rshift(C2 or 0, 4)
+		local C = bit32.lshift(bit32.band(C2 or 0, 15), 2) + bit32.rshift(C3 or 0, 6)
+		local D = bit32.band(C3 or 0, 63)
+
+		output[#output + 1] = alphabet[A + 1]
+		output[#output + 1] = alphabet[B + 1]
+		output[#output + 1] = C2 and alphabet[C + 1] or FILLER_CHARACTER
+		output[#output + 1] = C3 and alphabet[D + 1] or FILLER_CHARACTER
+	end
+
+	return buildString(output)
+end
+
+function Base64.decode(input)
+	local output = {}
+
+	for index = 1, #input, 4 do
+		local C1, C2, C3, C4 = string.byte(input, index, index + 3)
+
+		local I1 = indexes[C1] - 1
+		local I2 = indexes[C2] - 1
+		local I3 = (indexes[C3] or 1) - 1
+		local I4 = (indexes[C4] or 1) - 1
+
+		local A = bit32.lshift(I1, 2) + bit32.rshift(I2, 4)
+		local B = bit32.lshift(bit32.band(I2, 15), 4) + bit32.rshift(I3, 2)
+		local C = bit32.lshift(bit32.band(I3, 3), 6) + I4
+
+		output[#output + 1] = A
+		if C3 ~= FILLER_CHARACTER then output[#output + 1] = B end
+		if C4 ~= FILLER_CHARACTER then output[#output + 1] = C end
+	end
+
+	return buildString(output)
+end
+
+return Base64]]></ProtectedString>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="ModuleScript" referent="RBXC8E3B8CFAC6B413DBE97865BB9BDB414">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">HubApi</string>
+							<string name="ScriptGuid">{879F24CE-ECD1-44F5-8998-D5BB959E2F7A}</string>
+							<ProtectedString name="Source"><![CDATA[-- #######################################################
+-- Copyright (c) VAVE 2022. All rights reserved.
+-- VAVE LICENSED SOURCE CODE
+-- 
+-- File: FractiveHub.lua
+-- Description: Main library for the Fractive whitelisting API
+-- 
+-- Author: B. Sugiyama
+-- Date: 2022/10/11
+-- #######################################################
+-- 
+
+----------- SERVICE DEFINITIONS ----------- 
+local httpSvc = game:GetService("HttpService");
+
+-----------       IMPORTS       -----------
+local Base64 = require(script.Parent.Base64);
+
+-----------  CLASS DEFINITION   ----------- 
+local api = {};
+
+local Configuration = script.Parent.Configuration;
+
+-----------      FUNCTIONS    ----------- 
+function api:whitelistUser(userId)
+	local data = {
+		UserId = userId,
+		APIKey = Configuration.CustomerKey.Value,
+		IsGroup = false		
+	};
+	
+	local encoded = httpSvc:JSONEncode(data);
+
+	local encodedBase64 = Base64.encode(encoded);
+	
+	local uri = Configuration.HubUri.Value.."/WhitelistUser.ashx/"..encodedBase64;
+	
+	local response;
+	local respData;
+
+	pcall(function()
+		response = httpSvc:GetAsync(uri);
+		respData = httpSvc:JSONDecode(response);        
+	end)
+
+	if respData ~= nil then
+		if respData.Status == "OK" then
+			warn("FRCV: Successfully whitelisted "..userId);
+		else
+			error(respData.Status);
+		end
+	else
+		error("FRCV: Response from server was invalid");
+	end
+end
+
+function api:unwhitelistUser() error("Not implemented"); end
+
+return api;
+
+-- EOF]]></ProtectedString>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+	<SharedStrings>
+		<SharedString md5="yuZpQdnvvUBOTYh1jqZ2cA=="></SharedString>
+	</SharedStrings>
+</roblox>

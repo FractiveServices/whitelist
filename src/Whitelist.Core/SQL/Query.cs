@@ -1,6 +1,6 @@
 ﻿// #######################################################
 // Copyright (c) VAVE 2022. All rights reserved.
-// VAVE CONFIDENTIAL AND PROPRIETARY
+// VAVE DECLASSIFIED SOURCE CODE
 // 
 // File: Query.cs
 // Description: SQL querying manager

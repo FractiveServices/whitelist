@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fractive.AdminPanel.Backend", "Fractive.AdminPanel.Backend\Fractive.AdminPanel.Backend.csproj", "{072ED2A6-80F0-451D-B207-29433D5C0299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fractive.AdminPanel.Backend.Tests", "Fractive.AdminPanel.Backend.Tests\Fractive.AdminPanel.Backend.Tests.csproj", "{7FB7AE88-5548-4582-868B-E75D46CD5B28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fractive.AdminPanel.Schemas", "Fractive.AdminPanel.Schemas\Fractive.AdminPanel.Schemas.csproj", "{F8F9EF7F-2785-43E2-B92D-0B86214A8F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelist.Core", "..\..\backend\src\Whitelist.Core\Whitelist.Core.csproj", "{BB0B7435-218B-478E-9902-A72C991D0554}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fractive.AdminPanel.Shared", "Fractive.AdminPanel.Shared\Fractive.AdminPanel.Shared.csproj", "{80830ADD-D2BA-4E4C-A1C6-5E09D6D02A2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fractive.AdminPanel.Backend.Core", "Fractive.AdminPanel.Backend.Core\Fractive.AdminPanel.Backend.Core.csproj", "{D611332D-BDA4-4166-AB82-67932EDC8F51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whitelist.Logging", "..\..\backend\src\Whitelist.Logging\Whitelist.Logging.csproj", "{8CBF157E-379B-41A5-897F-DC24E05965DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{072ED2A6-80F0-451D-B207-29433D5C0299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072ED2A6-80F0-451D-B207-29433D5C0299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072ED2A6-80F0-451D-B207-29433D5C0299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072ED2A6-80F0-451D-B207-29433D5C0299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB7AE88-5548-4582-868B-E75D46CD5B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB7AE88-5548-4582-868B-E75D46CD5B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB7AE88-5548-4582-868B-E75D46CD5B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB7AE88-5548-4582-868B-E75D46CD5B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F9EF7F-2785-43E2-B92D-0B86214A8F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F9EF7F-2785-43E2-B92D-0B86214A8F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F9EF7F-2785-43E2-B92D-0B86214A8F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F9EF7F-2785-43E2-B92D-0B86214A8F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0B7435-218B-478E-9902-A72C991D0554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0B7435-218B-478E-9902-A72C991D0554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0B7435-218B-478E-9902-A72C991D0554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0B7435-218B-478E-9902-A72C991D0554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80830ADD-D2BA-4E4C-A1C6-5E09D6D02A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80830ADD-D2BA-4E4C-A1C6-5E09D6D02A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80830ADD-D2BA-4E4C-A1C6-5E09D6D02A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80830ADD-D2BA-4E4C-A1C6-5E09D6D02A2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D611332D-BDA4-4166-AB82-67932EDC8F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D611332D-BDA4-4166-AB82-67932EDC8F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D611332D-BDA4-4166-AB82-67932EDC8F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D611332D-BDA4-4166-AB82-67932EDC8F51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CBF157E-379B-41A5-897F-DC24E05965DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CBF157E-379B-41A5-897F-DC24E05965DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CBF157E-379B-41A5-897F-DC24E05965DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CBF157E-379B-41A5-897F-DC24E05965DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

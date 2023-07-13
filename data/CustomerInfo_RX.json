@@ -1,0 +1,12 @@
+{
+    "ID": 0,
+    "Username": "",
+    "DiscordID": 0,
+    "RobloxID": 0,
+    "APIKey": "",
+    "AccountStrikes": 0,
+    "AccountBanned": false,
+    "CurrentWhitelistCount": 0,
+    "MaxAllowedWhitelists": 0,
+    "ProductTier": 0
+}
